@@ -11,7 +11,7 @@ import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-slate-900">
+    <div className="min-h-screen bg-[#FAFBFA] text-slate-900">
       <Navbar />
       <main>
         <HeroSection />

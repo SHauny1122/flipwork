@@ -2,7 +2,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="border-b border-slate-200 bg-white py-16">
       <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-start lg:px-8">
-        <div className="rounded-xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+        <div className="rounded-xl bg-[#FAFBFA] p-6 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">Contact</h2>
           <p className="mt-4 text-sm leading-6 text-slate-600">
             Let&apos;s discuss your goals and practical next steps for growth.
@@ -14,7 +14,7 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <form className="space-y-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <form className="space-y-4 rounded-xl bg-[#FAFBFA] p-6 shadow-sm">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-slate-800">
               Name
@@ -23,7 +23,7 @@ export default function ContactSection() {
               id="name"
               name="name"
               type="text"
-              className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-slate-500 focus:ring-2 focus:ring-slate-200"
+              className="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-[#5F7F63] focus:ring-2 focus:ring-[#E7F0E8]"
               placeholder="Your name"
             />
           </div>
@@ -35,7 +35,7 @@ export default function ContactSection() {
               id="email"
               name="email"
               type="email"
-              className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-slate-500 focus:ring-2 focus:ring-slate-200"
+              className="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-[#5F7F63] focus:ring-2 focus:ring-[#E7F0E8]"
               placeholder="you@example.com"
             />
           </div>
@@ -47,13 +47,13 @@ export default function ContactSection() {
               id="message"
               name="message"
               rows={4}
-              className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-slate-500 focus:ring-2 focus:ring-slate-200"
+              className="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-[#5F7F63] focus:ring-2 focus:ring-[#E7F0E8]"
               placeholder="How can we help?"
             />
           </div>
           <button
             type="submit"
-            className="rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-slate-700"
+            className="rounded-lg bg-[#5F7F63] px-5 py-2.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#3F6B45]"
           >
             Send Message
           </button>

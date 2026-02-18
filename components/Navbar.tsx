@@ -29,7 +29,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-900"
+                  className="text-sm font-medium text-slate-600 transition-colors hover:text-[#3F6B45]"
                 >
                   {link.label}
                 </a>
@@ -39,7 +39,7 @@ export default function Navbar() {
 
           <a
             href="#contact"
-            className="hidden rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-slate-700 md:inline-flex"
+            className="hidden rounded-lg bg-[#5F7F63] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#3F6B45] md:inline-flex"
           >
             Book a Discussion
           </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMenuOpen((prev) => !prev)}
-            className="inline-flex rounded-xl border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 shadow-sm md:hidden"
+            className="inline-flex rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 shadow-sm transition-colors hover:bg-[#E7F0E8] md:hidden"
             aria-expanded={menuOpen}
             aria-controls="mobile-nav"
           >
@@ -61,7 +61,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block rounded-xl border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700"
+                className="block rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-[#E7F0E8]"
               >
                 {link.label}
               </a>
@@ -71,7 +71,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setMenuOpen(false)}
-              className="inline-flex justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm"
+              className="inline-flex justify-center rounded-lg bg-[#5F7F63] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#3F6B45]"
             >
               Book a Discussion
             </a>

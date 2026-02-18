@@ -46,15 +46,15 @@ export default function ServicesSection() {
         <h2 className="text-3xl font-semibold tracking-tight text-slate-900">Services</h2>
         <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6">
           {services.map((service) => (
-            <article key={service.title} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-              <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600">
+            <article key={service.title} className="rounded-xl bg-[#FAFBFA] p-6 shadow-sm">
+              <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#E7F0E8] text-[#3F6B45]">
                 {service.icon}
               </div>
               <h3 className="mt-4 text-lg font-semibold text-slate-900">{service.title}</h3>
               <p className="mt-2 text-sm leading-6 text-slate-600">{service.description}</p>
               <a
                 href="#contact"
-                className="mt-5 inline-flex text-sm font-medium text-slate-900 underline-offset-4 hover:underline"
+                className="mt-5 inline-flex text-sm font-medium text-[#3F6B45] underline-offset-4 hover:underline"
               >
                 Learn More
               </a>

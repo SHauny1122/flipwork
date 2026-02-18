@@ -10,7 +10,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-white py-14">
+    <footer className="bg-[#E7F0E8] py-14">
       <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
         <div>
           <div className="flex items-center gap-3">
@@ -27,7 +27,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm">
             {footerLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="text-slate-600 transition-colors hover:text-slate-900">
+                <a href={link.href} className="text-slate-600 transition-colors hover:text-[#3F6B45]">
                   {link.label}
                 </a>
               </li>
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="mx-auto mt-10 w-full max-w-[96rem] border-t border-slate-200 px-4 pt-6 text-xs text-slate-500 sm:px-6 lg:px-8">
+      <p className="mx-auto mt-10 w-full max-w-[96rem] border-t border-[#c6d7c8] px-4 pt-6 text-xs text-slate-500 sm:px-6 lg:px-8">
         © {new Date().getFullYear()} FlipWorks. All rights reserved.
       </p>
     </footer>

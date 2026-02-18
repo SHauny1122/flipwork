@@ -20,8 +20,8 @@ export default function HowWeWorkSection() {
         <h2 className="text-3xl font-semibold tracking-tight text-slate-900">How We Work</h2>
         <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-3 lg:gap-6">
           {steps.map((step, index) => (
-            <article key={step.title} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">
+            <article key={step.title} className="rounded-xl bg-[#FAFBFA] p-6 shadow-sm">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#5F7F63] text-sm font-semibold text-white">
                 {index + 1}
               </div>
               <h3 className="mt-4 text-lg font-semibold text-slate-900">{step.title}</h3>
