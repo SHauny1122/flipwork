@@ -1,3 +1,8 @@
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
@@ -8,30 +13,69 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="sticky top-0 z-20 border-b border-gray-200 bg-white">
-      <nav className="mx-auto w-full max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95">
+      <nav className="mx-auto w-full max-w-[96rem] px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4">
-          <a href="#home" className="text-lg font-semibold text-gray-900">
-            FlipWorks
+          <a href="#home" className="flex items-center gap-3">
+            <Image src="/flipworks-logo.png" alt="FlipWorks logo" width={34} height={34} />
+            <span className="text-lg font-semibold tracking-tight text-slate-900">FlipWorks</span>
           </a>
+
+          <ul className="hidden items-center gap-7 md:flex">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-900"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
           <a
             href="#contact"
-            className="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+            className="hidden rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-slate-700 md:inline-flex"
           >
             Book a Discussion
           </a>
+
+          <button
+            type="button"
+            onClick={() => setMenuOpen((prev) => !prev)}
+            className="inline-flex rounded-xl border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 shadow-sm md:hidden"
+            aria-expanded={menuOpen}
+            aria-controls="mobile-nav"
+          >
+            Menu
+          </button>
         </div>
 
-        <ul className="mt-4 flex gap-4 overflow-x-auto pb-1">
+        <ul id="mobile-nav" className={`${menuOpen ? "mt-4 grid" : "hidden"} gap-3 md:hidden`}>
           {navLinks.map((link) => (
-            <li key={link.href} className="shrink-0">
-              <a href={link.href} className="text-sm text-gray-700 hover:text-gray-900">
+            <li key={link.href}>
+              <a
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="block rounded-xl border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700"
+              >
                 {link.label}
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="#contact"
+              onClick={() => setMenuOpen(false)}
+              className="inline-flex justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm"
+            >
+              Book a Discussion
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

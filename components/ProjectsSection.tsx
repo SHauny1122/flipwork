@@ -15,17 +15,17 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="border-b border-gray-200 py-16 sm:py-20">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">Projects</h2>
-        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+    <section id="projects" className="border-b border-slate-200 bg-white py-16">
+      <div className="mx-auto w-full max-w-[96rem] px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-semibold tracking-tight text-slate-900">Projects</h2>
+        <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {projects.map((project) => (
-            <article key={project.title} className="rounded-lg border border-gray-200 p-5">
-              <div className="flex h-40 items-center justify-center rounded-md border border-dashed border-gray-300 bg-gray-50 text-sm text-gray-500">
-                Image Placeholder
+            <article key={project.title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div className="flex h-40 items-center justify-center rounded-xl border border-dashed border-slate-300 bg-slate-50 text-sm text-slate-500">
+                Project Image Placeholder
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-gray-900">{project.title}</h3>
-              <p className="mt-2 text-sm text-gray-700">{project.description}</p>
+              <h3 className="mt-4 text-lg font-semibold text-slate-900">{project.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{project.description}</p>
             </article>
           ))}
         </div>

@@ -15,11 +15,11 @@ const pillars = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="border-b border-gray-200 py-16 sm:py-20">
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-        <div>
-          <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">About FlipWorks</h2>
-          <p className="mt-4 text-base text-gray-700">
+    <section id="about" className="border-b border-slate-200 bg-white py-16">
+      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-slate-900">About FlipWorks</h2>
+          <p className="mt-5 text-base leading-7 text-slate-600">
             FlipWorks helps small businesses align strategy, build competence, and scale
             sustainably. We focus on practical implementation instead of theory.
           </p>
@@ -27,9 +27,9 @@ export default function AboutSection() {
 
         <div className="space-y-4">
           {pillars.map((pillar) => (
-            <article key={pillar.title} className="rounded-lg border border-gray-200 p-4">
-              <h3 className="text-lg font-semibold text-gray-900">{pillar.title}</h3>
-              <p className="mt-2 text-sm text-gray-700">{pillar.text}</p>
+            <article key={pillar.title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h3 className="text-lg font-semibold text-slate-900">{pillar.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{pillar.text}</p>
             </article>
           ))}
         </div>

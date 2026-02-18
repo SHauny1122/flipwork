@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const footerLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
@@ -8,21 +10,24 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 py-10 text-gray-200">
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+    <footer className="bg-white py-14">
+      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
         <div>
-          <h3 className="text-lg font-semibold">FlipWorks</h3>
-          <p className="mt-3 text-sm text-gray-300">
+          <div className="flex items-center gap-3">
+            <Image src="/flipworks-logo.png" alt="FlipWorks logo" width={28} height={28} />
+            <h3 className="text-lg font-semibold tracking-tight text-slate-900">FlipWorks</h3>
+          </div>
+          <p className="mt-4 max-w-sm text-sm leading-6 text-slate-600">
             Consulting and small-business support focused on practical growth.
           </p>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-gray-300">Navigation</h4>
+          <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Links</h4>
           <ul className="mt-3 space-y-2 text-sm">
             {footerLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="hover:text-white">
+                <a href={link.href} className="text-slate-600 transition-colors hover:text-slate-900">
                   {link.label}
                 </a>
               </li>
@@ -31,15 +36,16 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-gray-300">Follow Us</h4>
-          <div className="mt-3 flex gap-2">
-            <span className="rounded border border-gray-700 px-2 py-1 text-xs">FB</span>
-            <span className="rounded border border-gray-700 px-2 py-1 text-xs">LI</span>
-            <span className="rounded border border-gray-700 px-2 py-1 text-xs">IG</span>
+          <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Contact</h4>
+          <div className="mt-3 space-y-2 text-sm text-slate-600">
+            <p>hello@flipworks.co.za</p>
+            <p>+27 00 000 0000</p>
+            <p>Johannesburg, South Africa</p>
           </div>
         </div>
       </div>
-      <p className="mx-auto mt-8 w-full max-w-6xl px-4 text-xs text-gray-400 sm:px-6 lg:px-8">
+
+      <p className="mx-auto mt-10 w-full max-w-[96rem] border-t border-slate-200 px-4 pt-6 text-xs text-slate-500 sm:px-6 lg:px-8">
         © {new Date().getFullYear()} FlipWorks. All rights reserved.
       </p>
     </footer>
