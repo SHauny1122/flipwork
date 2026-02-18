@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <section id="home" className="border-b border-slate-200 bg-white py-16">
@@ -26,13 +28,17 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-2xl bg-[#E7F0E8] p-8 shadow-sm">
-          <div className="flex min-h-64 items-center justify-center rounded-xl border border-dashed border-[#c6d7c8] bg-[#FAFBFA] text-sm text-slate-500">
-            Hero Visual Placeholder
+        <div className="overflow-hidden rounded-2xl bg-[#E7F0E8] p-3 shadow-sm">
+          <div className="relative h-72 w-full overflow-hidden rounded-xl">
+            <Image
+              src="/heroflip.jpg"
+              alt="FlipWorks consulting discussion"
+              fill
+              priority
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
           </div>
-          <p className="mt-3 text-center text-xs text-slate-600">
-            Add a team photo or consulting workshop image.
-          </p>
         </div>
       </div>
     </section>
