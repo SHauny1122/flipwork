@@ -7,6 +7,7 @@ const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
+  { href: "#our-approach", label: "Our Approach" },
   { href: "#nsbc-membership", label: "NSBC Membership" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
