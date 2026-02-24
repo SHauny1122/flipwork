@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import HowWeWorkSection from "@/components/HowWeWorkSection";
 import MissionVisionValuesSection from "@/components/MissionVisionValuesSection";
+import ProblemSection from "@/components/ProblemSection";
 import Navbar from "@/components/Navbar";
 import NSBCMembershipSection from "@/components/NSBCMembershipSection";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutSection />
+        <ProblemSection />
         <MissionVisionValuesSection />
         <ServicesSection />
         <NSBCMembershipSection />

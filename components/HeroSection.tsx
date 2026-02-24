@@ -2,8 +2,22 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="border-b border-slate-200 bg-[#F2EFEA] py-16">
-      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+    <section id="home" className="relative overflow-hidden border-b border-slate-200 bg-[#F2EFEA] py-16">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-0 opacity-[0.08] sm:opacity-[0.30]"
+        style={{
+          backgroundImage: "url('/large-triangles.png')",
+          backgroundRepeat: "repeat",
+          backgroundPosition: "left top",
+          backgroundSize: "260px 260px",
+          WebkitMaskImage:
+            "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.65) 35%, rgba(0,0,0,0) 75%)",
+          maskImage:
+            "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.65) 35%, rgba(0,0,0,0) 75%)",
+        }}
+      />
+      <div className="relative z-10 mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
         <div className="max-w-2xl">
           <h1 className="text-5xl font-bold leading-tight tracking-tight text-[#2A2A2A] sm:text-6xl">
             Growing your SME stronger and more resilient
@@ -21,15 +35,15 @@ export default function HeroSection() {
             </a>
             <a
               href="#about"
-              className="rounded-lg border border-[#4F79A8]/30 px-5 py-3 text-center text-sm font-medium text-[#2A2A2A] transition-colors hover:bg-[#E4F0F3]"
+              className="rounded-lg bg-[#4F79A8] px-5 py-3 text-center text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#3f6489]"
             >
               Learn More
             </a>
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-2xl bg-[#E4F0F3] p-3 shadow-sm">
-          <div className="relative h-72 w-full overflow-hidden rounded-xl">
+        <div className="overflow-hidden bg-[#E4F0F3] p-3 shadow-sm">
+          <div className="relative h-72 w-full overflow-hidden">
             <Image
               src="/heroflip.jpg"
               alt="FlipWorks consulting discussion"
