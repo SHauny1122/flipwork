@@ -54,14 +54,14 @@ export default function HowWeWorkSection() {
           {/* Left column */}
           <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="text-4xl font-bold uppercase tracking-tight text-[#2A2A2A] sm:text-5xl">
-                Our Approach
+              <h2 className="text-3xl font-semibold tracking-tight text-[#2A2A2A]">
+                <span className="inline-block border-l-4 border-[#8E5A63] pl-3">Our Approach</span>
               </h2>
               <p className="text-base leading-7 text-[#2A2A2A]/80">
                 A practical, structured way to strengthen SMEs and drive measurable growth.
               </p>
             </div>
-            <div className="overflow-hidden rounded-2xl border border-white/50 shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
+            <div className="overflow-hidden border border-white/50 shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
               <div className="relative h-64 w-full sm:h-72 lg:h-[22rem]">
                 <Image
                   src="/flip5.jpg"
