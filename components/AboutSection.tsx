@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutSection() {
   return (
     <section id="about" className="border-b border-slate-200 bg-[#F2EFEA] py-16">
-      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-start lg:px-8">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-semibold tracking-tight text-[#2A2A2A]">
             <span className="inline-block border-l-4 border-[#8E5A63] pl-3">About FlipWorks</span>
@@ -14,8 +14,8 @@ export default function AboutSection() {
           </p>
         </div>
 
-        <div className="overflow-hidden bg-[#E4F0F3] p-3 shadow-sm">
-          <div className="relative h-[22rem] w-full overflow-hidden sm:h-[26rem] lg:h-[30rem]">
+        <div className="relative overflow-hidden bg-[#E4F0F3] p-3 shadow-sm transition-transform duration-300 lg:translate-x-10 xl:translate-x-16">
+          <div className="relative h-[22rem] w-full overflow-hidden sm:h-[26rem] lg:h-[32rem]">
             <Image
               src="/flip2.jpg"
               alt="FlipWorks team working with a client"

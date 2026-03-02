@@ -22,7 +22,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between gap-4">
           <a href="#home" className="flex items-center gap-3">
             <Image src="/flipworks-logo.png" alt="FlipWorks logo" width={34} height={34} />
-            <span className="text-lg font-semibold tracking-tight text-[#2A2A2A]">FlipWorks</span>
+            <span className="text-lg font-semibold tracking-tight">
+              <span className="text-[#5F8E9B]">FLIP</span>
+              <span className="text-[#8E5A63]">.</span>
+              <span className="text-[#4F79A8]">WORKS</span>
+            </span>
           </a>
 
           <ul className="hidden items-center gap-7 md:flex">
@@ -40,7 +44,7 @@ export default function Navbar() {
 
           <a
             href="#contact"
-            className="hidden rounded-lg bg-[#5F8E9B] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#4F79A8] md:inline-flex"
+            className="hidden rounded-lg bg-[#8E5A63] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#744750] md:inline-flex"
           >
             Book a Discussion
           </a>
@@ -72,7 +76,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setMenuOpen(false)}
-              className="inline-flex justify-center rounded-lg bg-[#5F8E9B] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#4F79A8]"
+              className="inline-flex justify-center rounded-lg bg-[#8E5A63] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#744750]"
             >
               Book a Discussion
             </a>
