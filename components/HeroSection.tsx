@@ -3,12 +3,26 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section id="home" className="relative overflow-hidden border-b border-slate-200 bg-[#F2EFEA] py-16">
+      {/* Decorative vertical accent bars */}
+      {/* Left-side teal bar */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-0">
+        <div className="h-full w-[48px] bg-[#5F8E9B]" />
+      </div>
+
+      {/* Far right stacked bars */}
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-0 flex items-stretch">
+        {/* Thicker teal bar */}
+        <div className="h-full w-[128px] bg-[#5F8E9B]" />
+        {/* Thinner blue bar */}
+        <div className="h-full w-[48px] bg-[#4F79A8]" />
+      </div>
+
       <div className="relative z-10 mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
         <div className="max-w-2xl">
-          <h1 className="text-6xl font-bold leading-tight tracking-tight text-[#2A2A2A] sm:text-6xl">
+          <h1 className="text-6xl font-bold leading-tight tracking-tight text-[#5F8E9B] sm:text-6xl">
             Growing your SME stronger and more resilient
           </h1>
-          <p className="mt-5 text-base leading-7 text-[#2A2A2A]/75 sm:text-lg">
+          <p className="mt-5 text-base leading-7 text-[#4F79A8] sm:text-lg">
             We help small businesses improve strategy, operations, and growth through practical
             consulting and coaching.
           </p>
