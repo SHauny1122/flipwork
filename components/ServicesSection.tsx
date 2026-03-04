@@ -73,7 +73,7 @@ function ServiceCard({ service }: { service: Service }) {
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="border-b border-slate-200 bg-white py-16">
+    <section id="services" className="border-b border-slate-200 bg-[#F2EFEA] py-16">
       <div className="mx-auto w-full max-w-[96rem] px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-semibold tracking-tight text-[#2A2A2A]">
           <span className="inline-block border-l-4 border-[#8E5A63] pl-3">Services</span>

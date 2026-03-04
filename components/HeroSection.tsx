@@ -27,7 +27,27 @@ export default function HeroSection() {
       <div className="relative z-10 mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
         <div className="max-w-2xl">
           <h1 className="text-[4.1rem] font-bold leading-tight tracking-tight sm:text-[4.6rem]">
-            <span className="block text-[#5F8E9B]">(Re) Design A</span>
+            <span className="block text-[#5F8E9B]">
+              (Re) Design{" "}
+              <span className="relative inline-block align-baseline">
+                <span className="relative z-10">A</span>
+                {/* Handwritten "Your" above the A */}
+                <span
+                  className="pointer-events-none absolute -top-8 left-1 text-lg sm:text-2xl text-[#8E5A63]"
+                  style={{
+                    fontFamily: "'Segoe Script', 'Comic Sans MS', cursive",
+                    transform: "rotate(-10deg)",
+                  }}
+                >
+                  Your
+                </span>
+                {/* Diagonal strike-through line */}
+                <span
+                  className="pointer-events-none absolute left-0 right-0 top-1/2 z-20 h-[3px] bg-[#8E5A63]"
+                  style={{ transform: "rotate(-18deg)" }}
+                />
+              </span>
+            </span>
             <span className="block text-[#8E5A63]">Better</span>
             <span className="block text-[#4F79A8]">Business.</span>
           </h1>
