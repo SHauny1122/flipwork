@@ -81,7 +81,7 @@ export default function HeroSection() {
           <div className="overflow-hidden bg-[#E4F0F3] p-3 shadow-sm">
             <div className="relative h-80 w-full overflow-hidden sm:h-96 lg:h-[440px]">
               <Image
-                src="/heroflip.jpg"
+                src="/new cover image.png"
                 alt="FlipWorks consulting discussion"
                 fill
                 priority
