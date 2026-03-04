@@ -33,7 +33,7 @@ export default function HeroSection() {
                 <span className="relative z-10">A</span>
                 {/* Handwritten "Your" above the A */}
                 <span
-                  className="pointer-events-none absolute -top-8 left-1 text-lg sm:text-2xl text-[#8E5A63]"
+                  className="pointer-events-none absolute -top-8 left-1 text-2xl sm:text-4xl text-[#8E5A63]"
                   style={{
                     fontFamily: "'Segoe Script', 'Comic Sans MS', cursive",
                     transform: "rotate(-10deg)",
@@ -72,6 +72,12 @@ export default function HeroSection() {
         </div>
 
         <div className="relative space-y-8 transition-transform duration-300 sm:space-y-10 lg:z-10 lg:translate-x-16 xl:translate-x-28">
+          <div className="pointer-events-none absolute -right-12 -top-16 z-20 hidden grid-cols-4 gap-3 sm:grid">
+            {Array.from({ length: 16 }).map((_, index) => (
+              <span key={index} className="h-1.5 w-1.5 rounded-full bg-white" />
+            ))}
+          </div>
+
           <div className="overflow-hidden bg-[#E4F0F3] p-3 shadow-sm">
             <div className="relative h-80 w-full overflow-hidden sm:h-96 lg:h-[440px]">
               <Image
