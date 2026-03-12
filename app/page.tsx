@@ -10,6 +10,7 @@ import Navbar from "@/components/Navbar";
 import NSBCMembershipSection from "@/components/NSBCMembershipSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ServicesSection from "@/components/ServicesSection";
+import OurWhySection from "@/components/OurWhySection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+        <OurWhySection />
         <AboutSection />
         <ProblemSection />
         <MissionVisionValuesSection />

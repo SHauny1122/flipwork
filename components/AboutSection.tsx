@@ -20,14 +20,38 @@ export default function AboutSection() {
               </span>
             </span>
           </h2>
-          <p className="mt-5 text-base leading-7 text-[#2A2A2A]/75">
-            FlipWorks helps small businesses align strategy, build competence, and scale
-            sustainably. We focus on practical implementation instead of theory.
-          </p>
+          <div className="mt-5 space-y-4 text-base leading-7 text-[#2A2A2A]/80 sm:text-lg">
+            <p className="font-semibold text-[#4F79A8]">
+              “The consulting partner where we are working together, flipping the works and designing a better
+              business!”
+            </p>
+            <p>
+              FlipWorks is the partner for small and medium businesses, working through a practical, involved
+              process that ignites new possibilities to make your business better.
+            </p>
+            <p>
+              We provide affordable, accessible, and practical results-oriented consulting services with hands-on,
+              partnership-based implementation and support aligned with limited budgets, time, and internal
+              resources.
+            </p>
+            <p>
+              Our services are tailored to create better conditions for your business to thrive, grow, and evolve in
+              the face of uncertainty and constant challenges.
+            </p>
+            <p>
+              FlipWorks advocates for SMEs and encourages every business to join an efficient membership solution.
+              We’re an official NSBC licensee and help SMEs engage with either the Platinum Membership or the free
+              tier with limited benefits.
+            </p>
+            <p>
+              For FlipWorks, this is an ongoing primary project—we support and engage the SME community every step of
+              the way.
+            </p>
+          </div>
         </div>
 
-        <div className="relative overflow-hidden bg-[#E4F0F3] p-3 shadow-sm transition-transform duration-300 lg:translate-x-10 xl:translate-x-16">
-          <div className="relative h-[22rem] w-full overflow-hidden sm:h-[26rem] lg:h-[32rem]">
+        <div className="relative overflow-hidden bg-[#E4F0F3] p-3 shadow-sm transition-transform duration-300 sm:max-lg:mx-auto lg:translate-x-10 xl:translate-x-16">
+          <div className="relative h-64 w-full overflow-hidden sm:h-[26rem] lg:h-[32rem]">
             <Image
               src="/flip2.jpg"
               alt="FlipWorks team working with a client"

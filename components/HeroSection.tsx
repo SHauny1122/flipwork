@@ -26,7 +26,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
         <div className="max-w-2xl">
-          <h1 className="text-[4.1rem] font-bold leading-tight tracking-tight sm:text-[4.6rem]">
+          <h1 className="text-[2.6rem] font-bold leading-tight tracking-tight sm:text-[3.8rem] lg:text-[4.6rem]">
             <span className="block text-[#5F8E9B]">
               (Re) Design{" "}
               <span className="relative inline-block align-baseline">
@@ -69,6 +69,20 @@ export default function HeroSection() {
               Learn More
             </a>
           </div>
+
+          <div className="mt-6 flex flex-col items-center gap-3 text-sm sm:items-start">
+            <div className="flex h-24 w-24 flex-col items-center justify-center rounded-full border-4 border-[#E3265D] bg-[#2A4F86] text-center font-semibold leading-tight text-white shadow-sm">
+              <span className="text-base">nsbc.</span>
+              <span className="text-[#F9C846]">africa</span>
+            </div>
+            <div className="rounded-full border-4 border-[#E3265D] bg-[#1F5477] px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-[#F9C846] shadow-sm">
+              Licensee
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#1F5477] px-5 py-2 text-sm font-medium text-white shadow-sm">
+              <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-[#1F5477]">✉</span>
+              <span>fanie@nsbclicensee.africa</span>
+            </div>
+          </div>
         </div>
 
         <div className="relative space-y-8 transition-transform duration-300 sm:space-y-10 lg:z-10 lg:translate-x-16 xl:translate-x-28">
@@ -86,12 +100,12 @@ export default function HeroSection() {
                 fill
                 priority
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover"
+                className="object-cover filter grayscale"
               />
             </div>
           </div>
 
-          <div className="grid grid-cols-4 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
             {heroCollage.map((item) => (
               <div
                 key={item.src}
@@ -102,7 +116,7 @@ export default function HeroSection() {
                   alt={item.alt}
                   fill
                   sizes="(min-width: 1024px) 12vw, 22vw"
-                  className="object-cover"
+                  className="object-cover filter grayscale"
                 />
               </div>
             ))}
