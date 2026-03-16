@@ -30,7 +30,7 @@ export default function HeroSection() {
             <span className="block text-[#5F8E9B]">
               (Re) Design{" "}
               <span className="relative inline-block align-baseline">
-                <span className="relative z-10">A</span>
+                <span className="relative z-10">a</span>
                 {/* Handwritten "Your" above the A */}
                 <span
                   className="pointer-events-none absolute -top-8 left-1 text-2xl sm:text-4xl text-[#8E5A63]"
@@ -43,8 +43,8 @@ export default function HeroSection() {
                 </span>
                 {/* Diagonal strike-through line */}
                 <span
-                  className="pointer-events-none absolute left-0 right-0 top-1/2 z-20 h-[3px] bg-[#8E5A63]"
-                  style={{ transform: "rotate(-18deg)" }}
+                  className="pointer-events-none absolute -left-2 -right-3 top-[54%] z-20 h-[3px] rounded-full bg-[#8E5A63]"
+                  style={{ transform: "rotate(-14deg)" }}
                 />
               </span>
             </span>
@@ -69,6 +69,8 @@ export default function HeroSection() {
               Learn More
             </a>
           </div>
+
+          <div className="mt-3 h-1 w-full max-w-[44rem] rounded-full bg-[#8E5A63]" />
 
           <div className="mt-6 flex flex-col items-center gap-3 text-sm sm:items-start">
             <div className="flex h-24 w-24 flex-col items-center justify-center rounded-full border-4 border-[#E3265D] bg-[#2A4F86] text-center font-semibold leading-tight text-white shadow-sm">

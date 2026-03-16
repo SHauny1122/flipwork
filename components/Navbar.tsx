@@ -21,7 +21,7 @@ export default function Navbar() {
       <nav className="mx-auto w-full max-w-[96rem] px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4">
           <a href="#home" className="flex items-center gap-3">
-            <Image src="/flipworks new logo2.jpg" alt="FlipWorks logo" width={40} height={40} />
+            <Image src="/output-onlinepngtools (1).png" alt="FlipWorks logo" width={43} height={43} />
             <span className="flex items-center gap-1 text-lg font-semibold tracking-tight">
               <span className="relative inline-block leading-none">
                 <span className="text-[#5F8E9B]">FL</span>

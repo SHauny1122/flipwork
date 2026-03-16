@@ -21,7 +21,7 @@ export default function AboutSection() {
             </span>
           </h2>
           <div className="mt-5 space-y-4 text-base leading-7 text-[#2A2A2A]/80 sm:text-lg">
-            <p className="font-semibold text-[#4F79A8]">
+            <p className="text-center font-semibold text-[#4F79A8]">
               “The consulting partner where we are working together, flipping the works and designing a better
               business!”
             </p>

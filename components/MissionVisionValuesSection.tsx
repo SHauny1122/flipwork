@@ -10,7 +10,7 @@ export default function MissionVisionValuesSection() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-stretch">
           {/* Left column: title + statements */}
           <div className="mx-auto max-w-2xl space-y-6 text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-[#2A2A2A]">
+            <h2 className="w-full text-left text-3xl font-semibold tracking-tight text-[#2A2A2A]">
               <span className="inline-flex items-center border-l-4 border-[#8E5A63] pl-3">Mission & Vision</span>
             </h2>
             <p className="mt-5 text-base leading-7 text-[#2A2A2A]/75">
