@@ -72,18 +72,23 @@ export default function HeroSection() {
 
           <div className="mt-3 h-1 w-full max-w-[44rem] rounded-full bg-[#8E5A63]" />
 
-          <div className="mt-5 flex flex-col items-center gap-3 text-sm sm:mt-6 sm:items-start">
-            <div className="flex h-24 w-24 flex-col items-center justify-center rounded-full border-4 border-[#E3265D] bg-[#2A4F86] text-center font-semibold leading-tight text-white shadow-sm">
-              <span className="text-base">nsbc.</span>
-              <span className="text-[#F9C846]">africa</span>
+          <div className="mt-5 flex flex-col items-center gap-5 text-sm sm:mt-6 sm:flex-row sm:items-end sm:gap-8">
+            <div className="flex flex-col items-center gap-3 sm:items-start">
+              <div className="flex h-24 w-24 flex-col items-center justify-center rounded-full border-4 border-[#E3265D] bg-[#2A4F86] text-center font-semibold leading-tight text-white shadow-sm">
+                <span className="text-base">nsbc.</span>
+                <span className="text-[#F9C846]">africa</span>
+              </div>
+              <div className="rounded-full border-4 border-[#E3265D] bg-[#1F5477] px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-[#F9C846] shadow-sm">
+                Licensee
+              </div>
+              <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-[#1F5477] px-4 py-2 text-xs font-medium text-white shadow-sm sm:px-5 sm:text-sm">
+                <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-[#1F5477]">✉</span>
+                <span className="break-all">fanie@nsbclicensee.africa</span>
+              </div>
             </div>
-            <div className="rounded-full border-4 border-[#E3265D] bg-[#1F5477] px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-[#F9C846] shadow-sm">
-              Licensee
-            </div>
-            <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-[#1F5477] px-4 py-2 text-xs font-medium text-white shadow-sm sm:px-5 sm:text-sm">
-              <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-[#1F5477]">✉</span>
-              <span className="break-all">fanie@nsbclicensee.africa</span>
-            </div>
+            <p className="max-w-[22rem] text-center text-xl font-semibold leading-tight text-[#4F79A8] sm:mb-1 sm:text-left sm:text-4xl">
+              Join Conversations and initiatives for Small Business Entrepreneurs in Africa
+            </p>
           </div>
         </div>
 
