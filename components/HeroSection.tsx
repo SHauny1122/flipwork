@@ -9,31 +9,31 @@ const heroCollage = [
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative overflow-hidden border-b border-slate-200 bg-[#F2EFEA] py-16">
+    <section id="home" className="relative overflow-hidden border-b border-slate-200 bg-[#F2EFEA] py-12 sm:py-16">
       {/* Decorative vertical accent bars */}
       {/* Left-side mauve bar */}
       <div className="pointer-events-none absolute inset-y-0 left-0 z-0">
-        <div className="h-full w-[24px] bg-[#8E5A63]" />
+        <div className="h-full w-[8px] bg-[#8E5A63] sm:w-[14px] lg:w-[24px]" />
       </div>
 
       {/* Far right stacked bars */}
       <div className="pointer-events-none absolute inset-y-0 right-0 z-0 flex items-stretch">
         {/* Thicker teal bar */}
-        <div className="h-full w-[128px] bg-[#5F8E9B]" />
+        <div className="h-full w-[18px] bg-[#5F8E9B] sm:w-[56px] lg:w-[128px]" />
         {/* Thinner blue bar */}
-        <div className="h-full w-[48px] bg-[#4F79A8]" />
+        <div className="h-full w-[8px] bg-[#4F79A8] sm:w-[24px] lg:w-[48px]" />
       </div>
 
       <div className="relative z-10 mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
         <div className="max-w-2xl">
-          <h1 className="text-[2.6rem] font-bold leading-tight tracking-tight sm:text-[3.8rem] lg:text-[4.6rem]">
+          <h1 className="text-[2.2rem] font-bold leading-[1.05] tracking-tight sm:text-[3.8rem] sm:leading-tight lg:text-[4.6rem]">
             <span className="block text-[#5F8E9B]">
               (Re) Design{" "}
               <span className="relative inline-block align-baseline">
                 <span className="relative z-10">a</span>
                 {/* Handwritten "Your" above the A */}
                 <span
-                  className="pointer-events-none absolute -top-8 left-1 text-2xl sm:text-4xl text-[#8E5A63]"
+                  className="pointer-events-none absolute -top-6 left-1 text-xl text-[#8E5A63] sm:-top-8 sm:text-4xl"
                   style={{
                     fontFamily: "'Segoe Script', 'Comic Sans MS', cursive",
                     transform: "rotate(-10deg)",
@@ -43,7 +43,7 @@ export default function HeroSection() {
                 </span>
                 {/* Diagonal strike-through line */}
                 <span
-                  className="pointer-events-none absolute -left-2 -right-3 top-[54%] z-20 h-[3px] rounded-full bg-[#8E5A63]"
+                  className="pointer-events-none absolute -left-1 -right-2 top-[56%] z-20 h-[2px] rounded-full bg-[#8E5A63] sm:-left-2 sm:-right-3 sm:top-[54%] sm:h-[3px]"
                   style={{ transform: "rotate(-14deg)" }}
                 />
               </span>
@@ -55,16 +55,16 @@ export default function HeroSection() {
             We help small businesses improve strategy, operations, and growth through practical
             consulting and coaching.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center">
             <a
               href="#contact"
-              className="rounded-lg bg-[#5F8E9B] px-5 py-3 text-center text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#4F79A8]"
+              className="w-full rounded-lg bg-[#5F8E9B] px-5 py-3 text-center text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#4F79A8] sm:w-auto"
             >
               Book a Discussion
             </a>
             <a
               href="#about"
-              className="rounded-lg bg-[#4F79A8] px-5 py-3 text-center text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#3f6489]"
+              className="w-full rounded-lg bg-[#4F79A8] px-5 py-3 text-center text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#3f6489] sm:w-auto"
             >
               Learn More
             </a>
@@ -72,7 +72,7 @@ export default function HeroSection() {
 
           <div className="mt-3 h-1 w-full max-w-[44rem] rounded-full bg-[#8E5A63]" />
 
-          <div className="mt-6 flex flex-col items-center gap-3 text-sm sm:items-start">
+          <div className="mt-5 flex flex-col items-center gap-3 text-sm sm:mt-6 sm:items-start">
             <div className="flex h-24 w-24 flex-col items-center justify-center rounded-full border-4 border-[#E3265D] bg-[#2A4F86] text-center font-semibold leading-tight text-white shadow-sm">
               <span className="text-base">nsbc.</span>
               <span className="text-[#F9C846]">africa</span>
@@ -80,9 +80,9 @@ export default function HeroSection() {
             <div className="rounded-full border-4 border-[#E3265D] bg-[#1F5477] px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-[#F9C846] shadow-sm">
               Licensee
             </div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#1F5477] px-5 py-2 text-sm font-medium text-white shadow-sm">
+            <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-[#1F5477] px-4 py-2 text-xs font-medium text-white shadow-sm sm:px-5 sm:text-sm">
               <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-[#1F5477]">✉</span>
-              <span>fanie@nsbclicensee.africa</span>
+              <span className="break-all">fanie@nsbclicensee.africa</span>
             </div>
           </div>
         </div>
