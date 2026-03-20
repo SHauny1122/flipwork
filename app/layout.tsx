@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,6 +33,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Script
+          src="https://sitebot-kappa.vercel.app/embed.js"
+          data-bot="a3978275-6393-476e-b4dd-b48f4989e91c"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
