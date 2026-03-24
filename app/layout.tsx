@@ -35,7 +35,7 @@ export default function RootLayout({
         {children}
         <Script
           src="https://sitebot-kappa.vercel.app/embed.js"
-          data-bot="a3978275-6393-476e-b4dd-b48f4989e91c"
+          data-bot="f4ef16b6-b275-4d22-b99e-5f829ff865ff"
           strategy="afterInteractive"
         />
       </body>
