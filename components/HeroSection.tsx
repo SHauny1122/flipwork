@@ -25,7 +25,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
-        <div className="max-w-2xl">
+        <div className="-ml-6 max-w-2xl pr-6 sm:-ml-2 sm:pr-0 lg:ml-0 lg:-translate-x-36 xl:-translate-x-40">
           <h1 className="text-[2.2rem] font-bold leading-[1.05] tracking-tight sm:text-[3.8rem] sm:leading-tight lg:text-[4.6rem]">
             <span className="block text-[#5F8E9B]">
               (Re) Design{" "}
