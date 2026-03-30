@@ -2,63 +2,54 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="border-b border-slate-200 bg-white py-16">
-      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-start lg:px-8">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-semibold tracking-tight text-[#2A2A2A]">
-            <span className="inline-flex items-center border-l-4 border-[#8E5A63] pl-3">
-              <span>About&nbsp;</span>
-              <span className="inline-flex items-center gap-1">
-                <span className="relative inline-block leading-none">
-                  <span className="text-[#5F8E9B]">FL</span>
-                  <span className="text-[#8E5A63]">i</span>
-                  <span className="text-[#5F8E9B]">P</span>
-                  <span className="pointer-events-none absolute left-0 right-0 -bottom-1 h-[2px] bg-[#8E5A63]" />
-                </span>
-                <span className="text-[#8E5A63]">.</span>
-                <span className="text-[#4F79A8]">WORKS</span>
-              </span>
-            </span>
-          </h2>
-          <div className="mt-5 space-y-4 text-base leading-7 text-[#2A2A2A]/80 sm:text-lg">
-            <p className="text-center font-semibold text-[#4F79A8]">
-              “The consulting partner where we are working together, flipping the works and designing a better
-              business!”
+    <section id="about" className="border-b border-slate-200 bg-[#E6E7EA] py-16">
+      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8">
+        <div>
+          <div className="mb-4 flex justify-center">
+            <Image src="/flipworks new logo2.jpg" alt="FlipWorks logo" width={84} height={84} className="h-auto w-16 sm:w-20" />
+          </div>
+          <h2 className="text-center text-3xl font-semibold tracking-tight text-[#2A2A2A]">About FlipWorks Consulting</h2>
+          <div className="mt-5 space-y-5 text-base leading-7 text-[#2A2A2A] sm:text-lg">
+            <p className="text-center text-3xl font-semibold leading-tight text-[#4F79A8] sm:text-4xl">
+              “The Consulting partner where we are working together, Flipping the Works and designing a Better
+              Business!”
             </p>
             <p>
-              FlipWorks is the partner for small and medium businesses, working through a practical, involved
-              process that ignites new possibilities to make your business better.
+              FlipWorks is the partner for small and medium businesses, where we are working through a practical
+              involved process, igniting new possibilities to make your business better.
             </p>
             <p>
-              We provide affordable, accessible, and practical results-oriented consulting services with hands-on,
-              partnership-based implementation and support aligned with limited budgets, time, and internal
+              We provide an affordable, accessible and practical results-oriented consulting services, with hands-on
+              partnership-based implementation and support which are aligned with limited budgets, time and internal
               resources.
             </p>
             <p>
-              Our services are tailored to create better conditions for your business to thrive, grow, and evolve in
-              the face of uncertainty and constant challenges.
-            </p>
-            <p>
-              FlipWorks advocates for SMEs and encourages every business to join an efficient membership solution.
-              We’re an official NSBC licensee and help SMEs engage with either the Platinum Membership or the free
-              tier with limited benefits.
-            </p>
-            <p>
-              For FlipWorks, this is an ongoing primary project—we support and engage the SME community every step of
-              the way.
+              Services are designed and tailored for creating better conditions by which your business can thrive,
+              grow and evolve in the face of uncertainty and constant challenges.
             </p>
           </div>
         </div>
 
-        <div className="relative overflow-hidden bg-[#E4F0F3] p-3 shadow-sm transition-transform duration-300 sm:max-lg:mx-auto lg:translate-x-10 xl:translate-x-16">
-          <div className="relative h-64 w-full overflow-hidden sm:h-[26rem] lg:h-[32rem]">
-            <Image
-              src="/flip2.jpg"
-              alt="FlipWorks team working with a client"
-              fill
-              sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-cover"
-            />
+        <div>
+          <div className="mb-4 flex justify-center">
+            <Image src="/fwlogo.png" alt="NSBC partner logo" width={168} height={168} className="h-auto w-32 sm:w-40" />
+          </div>
+          <h2 className="text-center text-3xl font-semibold tracking-tight text-[#2A2A2A]">About NSBC Africa Platinum Membership</h2>
+          <div className="mt-5 space-y-5 text-base leading-7 text-[#2A2A2A] sm:text-lg">
+            <p className="text-center text-3xl font-semibold leading-tight text-[#3F67FF] sm:text-4xl">
+              Join Conversations and initiatives for Small and Medium Business Entrepreneurs in South Africa and Africa
+            </p>
+            <p>
+              @ FlipWorks we advocate for Small and Medium Enterprises and in support of our beliefs we would
+              encourage all SME businesses to join an efficient membership solution.
+            </p>
+            <p>
+              We became an official NSBC licensee for their Platinum Membership and engages with SMEs to join the
+              NSBC Platinum Membership or the Free option with limited benefits.
+            </p>
+            <p>
+              For FlipWorks this is a continuous primary project where we will support and engage the SME community.
+            </p>
           </div>
         </div>
       </div>

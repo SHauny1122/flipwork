@@ -50,7 +50,7 @@ export default function Navbar() {
 
           <a
             href="#contact"
-            className="hidden rounded-lg bg-[#8E5A63] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#744750] md:inline-flex"
+            className="hidden rounded-lg bg-[#5F8E9B] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#4F79A8] md:inline-flex"
           >
             Book a Discussion
           </a>

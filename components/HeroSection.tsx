@@ -48,12 +48,14 @@ export default function HeroSection() {
                 />
               </span>
             </span>
-            <span className="block text-[#8E5A63]">Better</span>
-            <span className="block text-[#4F79A8]">Business.</span>
+            <span className="block">
+              <span className="text-[#8E5A63]">Better</span>{" "}
+              <span className="text-[#4F79A8]">Business.</span>
+            </span>
           </h1>
           <p className="mt-5 text-base leading-7 text-[#4F79A8] sm:text-lg">
-            We help small businesses improve strategy, operations, and growth through practical
-            consulting and coaching.
+            As such, better businesses are the ones that approach problems in a different,
+            systematic way, turning problems situations into opportunities.
           </p>
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center">
             <a
@@ -66,7 +68,7 @@ export default function HeroSection() {
               href="#about"
               className="w-full rounded-lg bg-[#4F79A8] px-5 py-3 text-center text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#3f6489] sm:w-auto"
             >
-              Learn More
+              Read More
             </a>
           </div>
 

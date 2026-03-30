@@ -19,10 +19,10 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        <OurWhySection />
         <AboutSection />
-        <ProblemSection />
         <MissionVisionValuesSection />
+        <ProblemSection />
+        <OurWhySection />
         <ServicesSection />
         <NSBCMembershipSection />
         <HowWeWorkSection />

@@ -42,6 +42,17 @@ export default function ProblemSection() {
               quite translate into day-to-day execution. FlipWorks helps you untangle these challenges so
               the business can run with more focus, clarity, and control.
             </p>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-7 text-[#2A2A2A]/80">
+              <li>These opportunities are there for the taking.</li>
+              <li>
+                START and Join Conversations and initiatives for Small Business Entrepreneurs in South Africa and
+                Africa.
+              </li>
+              <li>
+                Become a Platinum Member of the most comprehensive platform of its kind available monthly fee
+                benefits.
+              </li>
+            </ul>
           </div>
 
           {/* Right side problem list */}
