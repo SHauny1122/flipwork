@@ -20,18 +20,24 @@ export default function Navbar() {
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-[#F2EFEA]/95">
       <nav className="mx-auto w-full max-w-[96rem] px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4">
-          <a href="#home" className="flex items-center gap-3">
+          <a href="#home" className="-ml-10 flex items-start gap-3 sm:-ml-12 lg:-ml-39">
             <Image src="/output-onlinepngtools (1).png" alt="FlipWorks logo" width={43} height={43} />
-            <span className="flex items-center gap-1 text-lg font-semibold tracking-tight">
-              <span className="relative inline-block leading-none">
-                <span className="text-[#5F8E9B]">FL</span>
-                <span className="text-[#8E5A63]">i</span>
-                <span className="text-[#5F8E9B]">P</span>
-                {/* underline under FLiP */}
-                <span className="pointer-events-none absolute left-0 right-0 -bottom-1 h-[2px] bg-[#8E5A63]" />
+            <span className="flex flex-col leading-none text-[#2A2A2A]">
+              <span className="flex items-end gap-1.5">
+                <span className="flex items-center gap-1 text-lg font-semibold tracking-tight">
+                  <span className="relative inline-block leading-none">
+                    <span className="text-[#5F8E9B]">FL</span>
+                    <span className="text-[#8E5A63]">i</span>
+                    <span className="text-[#5F8E9B]">P</span>
+                    {/* underline under FLiP */}
+                    <span className="pointer-events-none absolute left-0 right-0 -bottom-1 h-[2px] bg-[#8E5A63]" />
+                  </span>
+                  <span className="text-[#8E5A63]">.</span>
+                  <span className="text-[#4F79A8]">WORKS</span>
+                </span>
+                <span className="-translate-y-1.5 pb-[1px] text-[0.62rem] font-semibold tracking-tight sm:text-[0.72rem]">PTY Ltd.</span>
               </span>
-              <span className="text-[#8E5A63]">.</span>
-              <span className="text-[#4F79A8]">WORKS</span>
+              <span className="mt-0 pl-[4.85rem] text-[1.15rem] font-medium tracking-tight sm:text-[1.35rem]">Consulting</span>
             </span>
           </a>
 
@@ -50,7 +56,7 @@ export default function Navbar() {
 
           <a
             href="#contact"
-            className="hidden rounded-lg bg-[#5F8E9B] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#4F79A8] md:inline-flex"
+            className="hidden rounded-lg bg-[#5F8E9B] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#4F79A8] md:inline-flex lg:-mr-39"
           >
             Book a Discussion
           </a>

@@ -1,3 +1,14 @@
+import Image from "next/image";
+
+const valueIcons = [
+  { src: "/icon 1.png", label: "Practicality" },
+  { src: "/icon2.png", label: "Approachability" },
+  { src: "/icon3.png", label: "Openness" },
+  { src: "/icon4.png", label: "Partnering" },
+  { src: "/icon5.png", label: "Value Creation" },
+  { src: "/icon6.png", label: "Understanding" },
+];
+
 export default function MissionVisionValuesSection() {
   return (
     <section className="border-b border-slate-200 bg-white py-16">
@@ -39,6 +50,19 @@ export default function MissionVisionValuesSection() {
               practical tools, conversations, knowledge and information for businesses to become better on any playing
               field.
             </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 pt-2 sm:grid-cols-3 lg:grid-cols-6">
+            {valueIcons.map((item) => (
+              <div key={item.label} className="overflow-hidden border-2 border-white bg-[#1F5C86] shadow-sm">
+                <div className="flex h-28 items-center justify-center px-4 py-3 sm:h-32">
+                  <Image src={item.src} alt={item.label} width={86} height={86} className="h-16 w-16 object-contain sm:h-20 sm:w-20" />
+                </div>
+                <p className="border-t border-white/60 px-2 py-2 text-center text-lg font-medium leading-tight text-white">
+                  {item.label}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -53,9 +53,9 @@ export default function HeroSection() {
               <span className="text-[#4F79A8]">Business.</span>
             </span>
           </h1>
-          <p className="mt-5 text-base leading-7 text-[#4F79A8] sm:text-lg">
-            As such, better businesses are the ones that approach problems in a different,
-            systematic way, turning problems situations into opportunities.
+          <p className="mt-5 text-base leading-7 text-[#2A2A2A] sm:text-lg">
+            <span className="font-bold">B</span>etter <span className="font-bold">B</span>usinesses are the ones that
+            approach problems in a different way, turning problems situations into opportunities.
           </p>
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center">
             <a
@@ -101,7 +101,7 @@ export default function HeroSection() {
             ))}
           </div>
 
-          <div className="overflow-hidden bg-[#E4F0F3] p-3 shadow-sm">
+          <div className="overflow-hidden border-2 border-black bg-[#E4F0F3] p-3 shadow-sm">
             <div className="relative h-80 w-full overflow-hidden sm:h-96 lg:h-[440px]">
               <Image
                 src="/new cover image.png"
@@ -118,14 +118,14 @@ export default function HeroSection() {
             {heroCollage.map((item) => (
               <div
                 key={item.src}
-                className="relative h-24 overflow-hidden rounded-md border border-white/40 bg-[#F2EFEA] sm:h-28 lg:h-32"
+                className="relative h-24 overflow-hidden border-2 border-black bg-[#F2EFEA] sm:h-28 lg:h-32"
               >
                 <Image
                   src={item.src}
                   alt={item.alt}
                   fill
                   sizes="(min-width: 1024px) 12vw, 22vw"
-                  className="object-cover filter grayscale"
+                  className="object-cover"
                 />
               </div>
             ))}
