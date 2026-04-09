@@ -21,6 +21,10 @@ export default function OurWhySection() {
             problem situations into opportunities.
           </p>
           <p className="text-2xl leading-none text-[#8E5A63]">…</p>
+          <p className="font-semibold text-[#2A2A2A]">WHAT can be BETTER in MY BUSINESS?</p>
+          <p>START and Join Conversations and initiatives for Small Business Entrepreneurs in South Africa and Africa.</p>
+          <p>Become a Platinum Member of the most comprehensive platform of its kind available.</p>
+          <p>monthly fee benefits</p>
         </div>
       </div>
     </section>
