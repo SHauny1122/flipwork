@@ -8,9 +8,9 @@ export default function ContactSection() {
             Let&apos;s discuss your goals and practical next steps for growth.
           </p>
           <div className="mt-5 space-y-3 text-sm text-slate-700">
-            <p>Email: hello@flipworks.co.za</p>
-            <p>Phone: +27 00 000 0000</p>
-            <p>Address: Johannesburg, South Africa</p>
+            <p>Email: info@flipworks.co.za</p>
+            <p>Phone: +27827740092</p>
+            <p>Address: Centurion , Gauteng</p>
           </div>
         </div>
 

@@ -52,6 +52,12 @@ export default function MissionVisionValuesSection() {
             </p>
           </div>
 
+          <div className="flex justify-center pt-1">
+            <div className="border border-white/80 bg-[#1F5C86] px-8 py-2 text-center text-3xl font-semibold tracking-wide text-white sm:text-[2rem]">
+              WE VALUE
+            </div>
+          </div>
+
           <div className="grid grid-cols-2 gap-4 pt-2 sm:grid-cols-3 lg:grid-cols-6">
             {valueIcons.map((item) => (
               <div key={item.label} className="overflow-hidden border-2 border-white bg-[#1F5C86] shadow-sm">
