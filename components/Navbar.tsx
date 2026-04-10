@@ -37,7 +37,7 @@ export default function Navbar() {
                 </span>
                 <span className="-translate-y-1.5 pb-[1px] text-[0.62rem] font-semibold tracking-tight sm:text-[0.72rem]">PTY Ltd.</span>
               </span>
-              <span className="mt-0 pl-[4.85rem] text-[1.15rem] font-medium tracking-tight sm:text-[1.35rem]">Consulting</span>
+              <span className="-mt-1.5 pl-[4.85rem] text-[1.15rem] font-medium tracking-tight sm:text-[1.35rem]">Consulting</span>
             </span>
           </a>
 
