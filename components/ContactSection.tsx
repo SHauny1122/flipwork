@@ -1,7 +1,7 @@
 export default function ContactSection() {
   return (
     <section id="contact" className="border-b border-slate-200 bg-white py-16">
-      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-start lg:px-8">
+      <div className="mx-auto grid w-full max-w-[108rem] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-start lg:px-8">
         <div className="rounded-xl bg-[#FAFBFA] p-6 shadow-sm">
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">Contact</h2>
           <p className="mt-4 text-sm leading-6 text-slate-600">

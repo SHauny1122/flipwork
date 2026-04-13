@@ -23,7 +23,7 @@ const honeycombHexes = [
 export default function HowWeWorkSection() {
   return (
     <section id="our-approach" className="border-b border-slate-200 bg-[#F2EFEA] py-16">
-      <div className="mx-auto w-full max-w-[96rem] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[108rem] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.45fr_0.55fr] lg:items-start">
           {/* Left column */}
           <div className="space-y-6">

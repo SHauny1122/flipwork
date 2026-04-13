@@ -11,7 +11,7 @@ const footerLinks = [
 export default function Footer() {
   return (
     <footer className="bg-[#F2EFEA] py-14">
-      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-10 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+      <div className="mx-auto grid w-full max-w-[108rem] grid-cols-1 gap-10 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
         <div>
           <div className="flex items-start gap-3">
             <Image src="/flipw new logo.png" alt="FlipWorks logo" width={43} height={43} />
@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="mx-auto mt-10 w-full max-w-[96rem] border-t border-[#c6d7c8] px-4 pt-6 text-xs text-slate-500 sm:px-6 lg:px-8">
+      <p className="mx-auto mt-10 w-full max-w-[108rem] border-t border-[#c6d7c8] px-4 pt-6 text-xs text-slate-500 sm:px-6 lg:px-8">
         © {new Date().getFullYear()} FlipWorks. All rights reserved.
       </p>
     </footer>

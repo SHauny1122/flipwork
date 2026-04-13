@@ -28,7 +28,7 @@ const problems = [
 export default function ProblemSection() {
   return (
     <section className="border-b border-slate-200 bg-[#F2EFEA] py-16">
-      <div className="mx-auto w-full max-w-[96rem] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[108rem] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-start">
           {/* Left side copy */}
           <div className="max-w-xl">

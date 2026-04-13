@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutSection() {
   return (
     <section id="about" className="border-b border-slate-200 bg-[#E6E7EA] py-16">
-      <div className="mx-auto grid w-full max-w-[96rem] grid-cols-1 gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8">
+      <div className="mx-auto grid w-full max-w-[108rem] grid-cols-1 gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8">
         <div className="rounded-[2rem] border-2 border-[#9CA3AF] px-6 py-8 sm:px-8">
           <p className="text-center text-2xl font-medium text-[#2A2A2A] sm:text-[2rem]">About:</p>
           <div className="mb-4 flex justify-center">

@@ -55,7 +55,7 @@ const valueCards = [
 export default function WhyChooseUsSection() {
   return (
     <section id="why-choose-us" className="border-b border-slate-200 bg-[#CFC9BB] py-16">
-      <div className="mx-auto w-full max-w-[96rem] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[108rem] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.48fr_0.52fr] lg:items-start">
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold tracking-tight text-[#2A2A2A]">

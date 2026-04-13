@@ -1,7 +1,7 @@
 export default function CTASection() {
   return (
     <section className="border-b border-slate-200 bg-white py-16">
-      <div className="mx-auto w-full max-w-[96rem] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[108rem] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-6 rounded-3xl border border-[#4F79A8]/10 bg-[#4F79A8] px-6 py-10 text-white shadow-sm sm:px-10 lg:flex-row lg:items-center">
           <div className="max-w-xl">
             <h2 className="text-3xl font-semibold tracking-tight">

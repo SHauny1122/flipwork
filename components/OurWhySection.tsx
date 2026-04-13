@@ -1,7 +1,7 @@
 export default function OurWhySection() {
   return (
     <section className="border-b border-slate-200 bg-[#F2EFEA] py-12 sm:py-16">
-      <div className="mx-auto w-full max-w-[70rem] px-4 text-center sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[108rem] px-4 text-center sm:px-6 lg:px-8">
         <p className="text-[0.65rem] font-semibold uppercase tracking-[0.45em] text-[#8E5A63] sm:text-xs">
           Our Why
         </p>

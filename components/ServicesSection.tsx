@@ -11,7 +11,7 @@ const hexColors = ["#8AA0B6", "#E4E4E4", "#C88F8A"];
 export default function ServicesSection() {
   return (
     <section id="services" className="border-b border-slate-200 bg-[#C8BCA0] py-16">
-      <div className="mx-auto w-full max-w-[96rem] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[108rem] px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-semibold tracking-tight text-[#2A2A2A]">
           <span className="inline-block border-l-4 border-[#8E5A63] pl-3">Services</span>
         </h2>
