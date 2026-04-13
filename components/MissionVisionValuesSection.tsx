@@ -2,36 +2,36 @@ import Image from "next/image";
 
 const whyPrinciples = [
   {
+    title: "People-Centred:",
+    text: "People create lasting value.",
+  },
+  {
+    title: "",
+    text: "",
+  },
+  {
     title: "Strength in Complexity:",
     text: "Economic volatility, regulatory changes, infrastructure challenges, and competitive pressures demand more than generic advice.",
   },
   {
-    title: "Design-Led Improvement:",
-    text: "The world around you and your business is filled with uncertainty.",
-  },
-  {
-    title: "Design-Led Improvement:",
-    text: "But within that uncertainty exist innumerable opportunities to design or (re) design, game changing businesses.",
-  },
-  {
-    title: "Design-Led Improvement:",
-    text: "These opportunities are there for the taking.",
+    title: "",
+    text: "",
   },
   {
     title: "Design-Led Improvement:",
     text: "We believe businesses are designed and not merely managed.",
   },
   {
-    title: "People-Centred:",
-    text: "People create lasting value",
+    title: "",
+    text: "",
   },
   {
     title: "Sustainable National Impact:",
     text: "By helping SMEs getting better we contribute to job creation, economic growth, and a more competitive national economy.",
   },
   {
-    title: "Benchmark Conversations",
-    text: "Join Conversations and initiatives for SME's in South Africa and Africa. Become a Platinum Member of the most comprehensive platform of its kind available. Many benefits for",
+    title: "",
+    text: "",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function MissionVisionValuesSection() {
               {whyPrinciples.map((item, index) => (
                 <article key={`${item.title}-${index}`} className="h-full rounded-lg bg-[#CFC9BB] p-2.5 text-[#1F1F1F]">
                   <div className="flex h-full gap-2">
-                    <span className="block w-2.5 shrink-0 rounded-sm bg-[#3A87F5]" />
+                    {item.title || item.text ? <span className="block w-2.5 shrink-0 rounded-sm bg-[#3A87F5]" /> : null}
                     <div>
                       <h4 className="text-[1.05rem] font-semibold leading-tight sm:text-[1.2rem]">{item.title}</h4>
                       <p className="mt-1 text-[0.94rem] leading-6 sm:text-base sm:leading-7">{item.text}</p>
