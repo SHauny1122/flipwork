@@ -101,7 +101,7 @@ export default function WhyChooseUsSection() {
                     alt={`${card.title} icon`}
                     fill
                     sizes="80px"
-                    className="object-contain mix-blend-multiply"
+                    className="scale-125 object-contain mix-blend-multiply"
                   />
                 </div>
 
