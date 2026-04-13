@@ -56,7 +56,7 @@ export default function HowWeWorkSection() {
                 className="origin-left scale-150 object-contain object-left"
               />
             </div>
-            <div className="rounded-2xl border-2 border-[#2A2A2A] bg-[#C8C2B6] px-5 py-4 text-center text-2xl leading-snug text-[#2A2A2A] sm:text-[2rem]">
+            <div className="mx-auto max-w-[42rem] rounded-2xl border-2 border-[#2A2A2A] bg-[#C8C2B6] px-4 py-3 text-center text-xl leading-snug text-[#2A2A2A] sm:text-[1.9rem]">
               The phases look to be straightforward but in practice, expect some twist and turns!
             </div>
           </div>
