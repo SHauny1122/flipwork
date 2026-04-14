@@ -20,13 +20,13 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutSection />
-        <MissionVisionValuesSection />
         <ProblemSection />
+        <MissionVisionValuesSection />
+        <WhyChooseUsSection />
         <OurWhySection />
         <ServicesSection />
         <NSBCMembershipSection />
         <HowWeWorkSection />
-        <WhyChooseUsSection />
         <ProjectsSection />
         <CTASection />
         <ContactSection />

@@ -6,38 +6,25 @@ const whyPrinciples = [
     text: "People create lasting value.",
   },
   {
-    title: "",
-    text: "",
+    title: "Design-Led Improvement:",
+    text: "We believe businesses are designed and not merely managed.",
   },
   {
     title: "Strength in Complexity:",
     text: "Economic volatility, regulatory changes, infrastructure challenges, and competitive pressures demand more than generic advice.",
   },
   {
-    title: "",
-    text: "",
-  },
-  {
-    title: "Design-Led Improvement:",
-    text: "We believe businesses are designed and not merely managed.",
-  },
-  {
-    title: "",
-    text: "",
-  },
-  {
     title: "Sustainable National Impact:",
     text: "By helping SMEs getting better we contribute to job creation, economic growth, and a more competitive national economy.",
   },
-  {
-    title: "",
-    text: "",
-  },
 ];
+
+const stepOffsets = ["lg:mr-24", "lg:ml-6", "lg:ml-12", "lg:ml-16"];
+const stepWidths = ["lg:max-w-[40%]", "lg:max-w-[56%]", "lg:max-w-[72%]", "lg:max-w-[90%]"];
 
 export default function MissionVisionValuesSection() {
   return (
-    <section className="border-b border-slate-200 bg-[#2C9E9B] py-16">
+    <section className="border-b border-slate-200 bg-[#D8CBB8] py-16">
       <div className="mx-auto w-full max-w-[108rem] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-[0.72fr_0.28fr] lg:items-start">
           <div className="space-y-6">
@@ -65,11 +52,14 @@ export default function MissionVisionValuesSection() {
               Our “WHY” Principles
             </h3>
 
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:[grid-auto-rows:1fr]">
+            <div className="space-y-2.5">
               {whyPrinciples.map((item, index) => (
-                <article key={`${item.title}-${index}`} className="h-full rounded-lg bg-[#CFC9BB] p-2.5 text-[#1F1F1F]">
+                <article
+                  key={`${item.title}-${index}`}
+                  className={`w-full rounded-lg bg-[#C4B8A7] p-2.5 text-[#1F1F1F] ${stepOffsets[index] ?? ""} ${stepWidths[index] ?? ""}`}
+                >
                   <div className="flex h-full gap-2">
-                    {item.title || item.text ? <span className="block w-2.5 shrink-0 rounded-sm bg-[#3A87F5]" /> : null}
+                    <span className="block w-2.5 shrink-0 rounded-sm bg-[#3A87F5]" />
                     <div>
                       <h4 className="text-[1.05rem] font-semibold leading-tight sm:text-[1.2rem]">{item.title}</h4>
                       <p className="mt-1 text-[0.94rem] leading-6 sm:text-base sm:leading-7">{item.text}</p>
@@ -87,7 +77,7 @@ export default function MissionVisionValuesSection() {
                 alt="Vision and mission collage"
                 fill
                 sizes="(min-width: 1024px) 28vw, 100vw"
-                className="object-cover"
+                className="object-cover grayscale"
               />
             </div>
           </div>
