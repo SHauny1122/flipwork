@@ -34,8 +34,8 @@ export default function RootLayout({
       >
         {children}
         <Script
-          src="https://sitebot-kappa.vercel.app/embed.js"
-          data-bot="f4ef16b6-b275-4d22-b99e-5f829ff865ff"
+          src="https://www.autochatbot.chat/embed.js"
+          data-bot="c4f4e453-5cd9-4697-be27-4a049a189052"
           strategy="afterInteractive"
         />
       </body>
